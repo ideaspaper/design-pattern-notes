@@ -20,7 +20,7 @@ tsc --version
 
 ## Hello World
 
-Apabila instalasi TypeScript sudah berhasil, maka kita bisa mulai membuat program _Hello World_ kita. Eksekusi command di bawah ini.
+Apabila instalasi TypeScript sudah berhasil, maka kita bisa mulai membuat program Hello World kita. Eksekusi command di bawah ini.
 
 ```bash
 mkdir hello-world
@@ -28,7 +28,7 @@ cd hello-world
 code .
 ```
 
-Buat sebuah file baru dengan nama `hello-world.ts` pada Visual Studio Code, kemudian ketikkan kode program di bawah.
+Setelah editor Visual Studio Code terbuka, buat sebuah file baru dengan nama `hello-world.ts`. Ketikkan kode program di bawah.
 
 ```typescript
 let message: string = 'Hello World! I am speaking TypeScript!';
@@ -61,7 +61,7 @@ Isi sederhana dari `tsconfig.json` adalah seperti di bawah.
 }
 ```
 
-Apabila command `tsc` dieksekusi, maka compiler TypeScript akan mencari file `tsconfig.json`. Kemudian compiler TypeScript akan menggunakan parameter-parameter yang dituliskan pada file tersebut saat proses kompilasi. Pada `tsconfig.json`, disebutkan bahwa output hasil kompilasi akan diletakkan pada sebuah direktori dengan nama `dist`.
+Apabila command `tsc` dieksekusi, maka compiler TypeScript akan mencari file `tsconfig.json`. Compiler TypeScript akan menggunakan parameter-parameter yang dituliskan pada file tersebut saat proses kompilasi. Pada `tsconfig.json` di atas, disebutkan bahwa output hasil kompilasi akan diletakkan pada sebuah direktori dengan nama `dist`.
 
 Informasi lebih lengkap mengenai konfigurasi `tsconfig.json` dapat ditemukan pada [link berikut](https://www.typescriptlang.org/tsconfig).
 
@@ -79,7 +79,7 @@ Untuk mempersingkat proses konfigurasi, saat ini copy-paste `json` berikut pada 
 }
 ```
 
-Berdasarkan konfigurasi tersebut, struktur direktori dari program _Hello World_ kita adalah seperti di bawah.
+Berdasarkan konfigurasi tersebut, struktur direktori dari program Hello World kita adalah seperti di bawah.
 
 ```
 hello-world
@@ -90,6 +90,6 @@ hello-world
 ├── tsconfig.json
 ```
 
-Semua file TypeScript akan diletakkan pada direktori `src`. Hasil proses kompilasi TypeScript akan diletakkan pada direktori `dist`.
+Semua file TypeScript akan diletakkan pada direktori `src`. Hasil proses kompilasi dari command `tsc` akan diletakkan pada direktori `dist`.
 
 [back](./README.md)

@@ -121,7 +121,7 @@ Pernyataan di atas mengajak kita untuk memisahkan aspek yang berubah-ubah dari h
 
 ```typescript
 interface IGreet {
-  execute();
+  execute(): void;
 }
 
 class NoGreet implements IGreet {
@@ -131,7 +131,7 @@ class NoGreet implements IGreet {
     this.owner = owner;
   }
 
-  execute() {
+  execute(): void {
     console.log('Nyenyenye...')
   }
 }
@@ -143,7 +143,7 @@ class ProperGreet implements IGreet {
     this.owner = owner;
   }
 
-  execute() {
+  execute(): void {
     console.log(`Halo nama saya adalah ${this.owner.getFirstName()} ${this.owner.getLastName()}.`);
   }
 }
@@ -163,15 +163,15 @@ class Human {
 
   // Karena dari semua rentang umur hanya aktivitas sleep yang sama,
   // maka method sleep diletakkan pada base class
-  sleep() {
+  sleep(): void {
     console.log(`${this.firstName} ${this.lastName} zzz...`);
   }
 
-  getFirstName() {
+  getFirstName(): string {
     return this.firstName;
   }
 
-  getLastName() {
+  getLastName(): string {
     return this.lastName;
   }
 }
@@ -193,7 +193,7 @@ class Baby extends Human {
 }
 ```
 
-Menggunakan cara di atas, kita dapat menentukan _strategy_ apa yang akan digunakan untuk masing-masing class. Apabila client meminta agar program kita dapat menangani `Elder`, kita dapat membuat _strategy_ baru untuk `greet` dengan menambahkan implementasi interface `IGreet` seperti di bawah.
+Dengan cara di atas, kita dapat menentukan implementasi (_strategy_) `IGreet` yang paling tepat untuk sebuah class. Apabila client meminta program kita untuk dapat menangani `Elder`, kita dapat membuat implementasi baru untuk `IGreet` dengan menambahkan implementasi seperti di bawah.
 
 ```typescript
 class SlowGreet implements IGreet {
@@ -203,13 +203,13 @@ class SlowGreet implements IGreet {
     this.owner = owner;
   }
 
-  execute() {
+  execute(): void {
     console.log(`Halo anak muda... Nama saya adalah ${this.owner.getFirstName()} ${this.owner.getLastName()}.`);
   }
 }
 ```
 
-Sedangkan bentuk class dari `Elder` akan menjadi seperti di bawah.
+Sedangkan bentuk dari class `Elder` akan menjadi seperti di bawah.
 
 ```typescript
 class Elder extends Human {
@@ -221,7 +221,7 @@ class Elder extends Human {
 }
 ```
 
-Apabila client meminta agar program kita dapat menangani `Teenager`, kita tidak perlu membuat _strategy_ greet baru. Kita cukup menggunakan `ProperGreet` yang telah kita buat sebelumnya.
+Apabila client meminta agar program kita dapat menangani `Teenager`, kita tidak perlu membuat implementasi `IGreet` baru. Kita cukup menggunakan `ProperGreet` yang telah kita buat sebelumnya.
 
 ```typescript
 class Teenager extends Human {
@@ -235,9 +235,9 @@ class Teenager extends Human {
 
 ## Better Approach
 
-Apabila kita amati, implementasi yang sudah dilakukan di atas tidak fleksibel. Pada class `Teenager`, implementasi greet ditentukan secara _hard-code_. Apabila kita membuat sebuah object menggunakan class `Teenager`, _strategy_ dari `greet` sudah ditentukan, yaitu `ProperGreet`. Hal seperti ini disebut juga sebagai _tight coupling_. Class `Teenager` akan bergantung secara langsung pada class `ProperGreet`. _Tight coupling_ akan mengurangi fleksibilitas dari kode program dan seharusnya dihindari. Kita dapat memanfaatkan fungsi setter untuk menghindari hal tersebut.
+Apabila kita amati, implementasi yang sudah dilakukan di atas tidak fleksibel. Pada class `Teenager`, implementasi `IGreet` ditentukan secara _hard-code_. Apabila kita membuat sebuah object menggunakan class `Teenager`, implementasi dari `greet` sudah ditentukan, yaitu `ProperGreet`. Hal seperti ini disebut juga sebagai _tight coupling_. Class `Teenager` akan bergantung secara langsung pada class `ProperGreet`. _Tight coupling_ akan mengurangi fleksibilitas dari kode program dan seharusnya dihindari. Kita dapat memanfaatkan fungsi setter untuk menghindari hal tersebut.
 
-Contoh dari implementasi fungsi setter `greet` pada class `Teenager` adalah seperti di bawah.
+Contoh dari implementasi fungsi setter pada class `Teenager` adalah seperti di bawah.
 
 ```typescript
 class Teenager extends Human {
@@ -253,7 +253,7 @@ class Teenager extends Human {
 }
 ```
 
-Dengan adanya fungsi setter, maka kita dapat menentukan _strategy_ `greet` yang akan digunakan pada saat _runtime_.
+Dengan adanya fungsi setter, maka kita dapat menentukan implementasi `greet` yang akan digunakan pada saat _runtime_.
 
 ```typescript
 let teenagerAcong = new Teenager('Sitorus', 'Asdfg');

@@ -1,4 +1,4 @@
-[back](./README.md)
+[_BACK_](./README.md)
 
 # Class in TypeScript
 
@@ -183,4 +183,4 @@ let greeting: Message = new Message('acong pergi ke pasar');
 greeting.formatReverse().formatTitleCase().print();
 ```
 
-[back](./README.md)
+[_BACK_](./README.md)

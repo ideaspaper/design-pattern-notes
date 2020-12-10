@@ -1,4 +1,4 @@
-[back](./README.md)
+[_BACK_](./README.md)
 
 # Strategy Pattern
 
@@ -261,4 +261,4 @@ teenagerAcong.setGreet(new ProperGreet(teenagerAcong));
 teenagerAcong.greet.execute();
 ```
 
-[back](./README.md)
+[_BACK_](./README.md)

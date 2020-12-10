@@ -4,9 +4,9 @@
 
 ## Problems
 
-Sebuah base class `A` memiliki method `B` yang sudah memiliki suatu implementasi. Pada saat kode program dituntut untuk berubah dan berkembang, terdapat masalah. Tidak semua class turunan dari class `A` harus memiliki implementasi method `B`. Sebagai contoh adalah sebagai berikut.
+Sebuah base class `A` memiliki method `B` yang sudah memiliki suatu implementasi. Pada saat kode program dituntut untuk berubah dan berkembang, ternyata terdapat masalah. Tidak semua turunan dari class `A` harus memiliki implementasi method `B`. Sebagai contoh adalah seperti di bawah.
 
-Kita memiliki sebuah base class `Human` dan class turunan `Adult` seperti di bawah.
+Kita memiliki sebuah base class `Human` dan class turunan `Adult`.
 
 ```typescript
 class Human {
@@ -18,27 +18,27 @@ class Human {
     this.lastName = lastName;
   }
 
-  greet() {
+  greet(): void {
     console.log(`Halo nama saya adalah ${this.firstName} ${this.lastName}.`);
   }
 
-  sleep() {
+  sleep(): void {
     console.log(`${this.firstName} ${this.lastName} zzz...`);
   }
 
-  eat() {
+  eat(): void {
     console.log(`${this.firstName} ${this.lastName} makan menggunakan sendok.`)
   }
 
-  walk() {
+  walk(): void {
     console.log(`${this.firstName} ${this.lastName} berjalan dengan dua kaki.`);
   }
 
-  getFirstName() {
+  getFirstName(): string {
     return this.firstName;
   }
 
-  getLastName() {
+  getLastName(): string {
     return this.lastName;
   }
 }

@@ -1,4 +1,4 @@
-[_BACK_](./README.md)
+[**BACK**](./README.md)
 
 # OOP Characteristics
 
@@ -10,4 +10,4 @@
 
 ## Polymorphism
 
-[_BACK_](./README.md)
+[**BACK**](./README.md)

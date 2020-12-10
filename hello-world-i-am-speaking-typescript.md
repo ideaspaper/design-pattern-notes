@@ -1,4 +1,4 @@
-[_BACK_](./README.md)
+[**BACK**](./README.md)
 
 # Hello World! I am speaking TypeScript!
 
@@ -92,4 +92,4 @@ hello-world
 
 Semua file TypeScript akan diletakkan pada direktori `src`. Hasil proses kompilasi dari command `tsc` akan diletakkan pada direktori `dist`.
 
-[_BACK_](./README.md)
+[**BACK**](./README.md)

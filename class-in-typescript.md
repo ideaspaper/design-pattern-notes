@@ -176,7 +176,7 @@ class Message {
 }
 ```
 
-Karena method `formatReverse` dan `formatTitleCase` memberikan return value, yaitu object itu sendiri, maka kita bisa memanggil kembali (chaining) method yang ada pada object tersebut. Kode program yang akan kita buat menjadi lebih sederhana seperti contoh di bawah.
+Karena method `formatReverse` dan `formatTitleCase` memberikan return value, yaitu object itu sendiri, maka kita bisa memanggil kembali (_chaining_) method yang ada pada object tersebut. Kode program yang akan kita buat menjadi lebih sederhana seperti contoh di bawah.
 
 ```typescript
 let greeting: Message = new Message('acong pergi ke pasar');

@@ -132,7 +132,7 @@ class Message {
 }
 ```
 
-Apabila kita memiliki pesan `"acong pergi ke pasar"`, kemudian kita hendak melakukan:
+Apabila kita memiliki pesan `'acong pergi ke pasar'`, kemudian kita hendak melakukan:
 1. Membalik pesan tersebut.
 1. Mengubah format dari pesan tersebut ke title case.
 1. Menampilkan pesan tersebut ke terminal.

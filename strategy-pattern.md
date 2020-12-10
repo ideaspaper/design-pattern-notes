@@ -4,7 +4,7 @@
 
 ## Problems
 
-Sebuah base class `A` memiliki method `B` yang sudah memiliki suatu implementasi. Pada saat kode program dituntut untuk berubah dan berkembang, ternyata terdapat masalah. Tidak semua turunan dari class `A` harus memiliki implementasi method `B`. Sebagai contoh adalah seperti di bawah.
+Sebuah base class `A` memiliki method `B` yang sudah memiliki suatu implementasi. Pada saat kode program dituntut untuk berubah dan berkembang, ternyata terjadi masalah. Tidak semua turunan dari class `A` harus memiliki implementasi method `B`. Sebagai contoh adalah seperti di bawah.
 
 Kita memiliki sebuah base class `Human` dan class turunan `Adult`.
 

@@ -76,7 +76,7 @@ johnDoe.greet(); // Hello my name is John Doe. You can call me Doe.
 
 ### this
 
-Pada contoh di atas, terdapat keyword `this`. Keyword tersebut merujuk pada object yang telah dibuat menggunakan keyword `new`. Agar lebih memahami, jalankan kode program berikut.
+Pada contoh di atas, terdapat keyword `this`. Keyword tersebut merujuk pada object yang telah dibuat menggunakan keyword `new`. Agar lebih memahami `this`, jalankan kode program berikut.
 
 ```typescript
 class Person {
@@ -132,12 +132,12 @@ class Message {
 }
 ```
 
-Apabila kita memiliki pesan "acong pergi ke pasar", kemudian kita hendak melakukan:
+Apabila kita memiliki pesan `"acong pergi ke pasar"`, kemudian kita hendak melakukan:
 1. Membalik pesan tersebut.
 1. Mengubah format dari pesan tersebut ke title case.
 1. Menampilkan pesan tersebut ke terminal.
 
-Dengan class seperti di atas, maka kita akan melakukan hal berikut.
+Dengan class seperti di atas, maka kode program yang akan kita buat adalah seperti di bawah.
 
 ```typescript
 let greeting = new Message('acong pergi ke pasar');
@@ -176,7 +176,7 @@ class Message {
 }
 ```
 
-Karena method `formatReverse` dan `formatTitleCase` memberikan return value yaitu object itu sendiri, maka kita bisa memanggil kembali (chaining) method yang ada pada object tersebut. Kode program eksekusinya adalah seperti di bawah.
+Karena method `formatReverse` dan `formatTitleCase` memberikan return value, yaitu object itu sendiri, maka kita bisa memanggil kembali (chaining) method yang ada pada object tersebut. Kode program yang akan kita buat menjadi lebih sederhana seperti contoh di bawah.
 
 ```typescript
 let greeting = new Message('acong pergi ke pasar');

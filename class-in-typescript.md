@@ -16,7 +16,7 @@ class Person {
   lastName: string;
 }
 
-let johnDoe = new Person(); // Membuat object Person
+let johnDoe: Person = new Person(); // Membuat object Person
 johnDoe.firstName = 'John'; // Mengisi property firstName dengan value 'John'
 johnDoe.lastName = 'Doe';   // Mengisi property lastName dengan value 'Doe'
 
@@ -37,12 +37,12 @@ class Person {
   }
 }
 
-let johnDoe = new Person();
+let johnDoe: Person = new Person();
 johnDoe.firstName = 'John';
 johnDoe.lastName = 'Doe';
 johnDoe.greet(); // Hello my name is John Doe. You can call me Doe.
 
-let johnSmith = new Person();
+let johnSmith: Person = new Person();
 johnSmith.firstName = 'John';
 johnSmith.lastName = 'Smith';
 johnSmith.greet(); // Hello my name is John Smith. You can call me Smith.
@@ -67,7 +67,7 @@ class Person {
   }
 }
 
-let johnDoe = new Person('John', 'Doe'); // Membuat object Person menggunakan constructor
+let johnDoe: Person = new Person('John', 'Doe'); // Membuat object Person menggunakan constructor
                                          // 'John' sebagai value argumen fn
                                          // 'Doe' sebagai value argumen ln
 
@@ -93,7 +93,7 @@ class Person {
   }
 }
 
-let johnDoe = new Person('John', 'Doe'); // Membuat object Person menggunakan constructor
+let johnDoe: Person = new Person('John', 'Doe'); // Membuat object Person menggunakan constructor
 johnDoe.state();      // Person { firstName: 'John', lastName: 'Doe' }
 console.log(johnDoe); // Person { firstName: 'John', lastName: 'Doe' }
 ```
@@ -140,7 +140,7 @@ Apabila kita memiliki pesan `'acong pergi ke pasar'`, kemudian kita hendak melak
 Dengan class seperti di atas, maka kode program yang akan kita buat adalah seperti di bawah.
 
 ```typescript
-let greeting = new Message('acong pergi ke pasar');
+let greeting: Message = new Message('acong pergi ke pasar');
 greeting.formatReverse();
 greeting.formatTitleCase();
 greeting.print();
@@ -179,7 +179,7 @@ class Message {
 Karena method `formatReverse` dan `formatTitleCase` memberikan return value, yaitu object itu sendiri, maka kita bisa memanggil kembali (chaining) method yang ada pada object tersebut. Kode program yang akan kita buat menjadi lebih sederhana seperti contoh di bawah.
 
 ```typescript
-let greeting = new Message('acong pergi ke pasar');
+let greeting: Message = new Message('acong pergi ke pasar');
 greeting.formatReverse().formatTitleCase().print();
 ```
 

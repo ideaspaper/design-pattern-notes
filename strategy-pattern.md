@@ -247,7 +247,7 @@ class Teenager extends Human {
     super(firstName, lastName);
   }
 
-  setGreet(greetStrategy: IGreet) {
+  setGreet(greetStrategy: IGreet): void {
     this.greet = greetStrategy;
   }
 }

@@ -32,7 +32,7 @@ class Person {
   firstName: string;
   lastName: string;
 
-  greet() {
+  greet(): void {
     console.log(`Hello my name is ${this.firstName} ${this.lastName}. You can call me ${this.firstName}.`);
   }
 }
@@ -62,7 +62,7 @@ class Person {
     this.lastName = ln;
   }
 
-  greet() {
+  greet(): void {
     console.log(`Hello my name is ${this.firstName} ${this.lastName}. You can call me ${this.lastName}.`);
   }
 }
@@ -88,7 +88,7 @@ class Person {
     this.lastName = ln;
   }
 
-  state() {
+  state(): void {
     console.log(this);
   }
 }
@@ -114,11 +114,11 @@ class Message {
     this.value = value;
   }
 
-  formatReverse() {
+  formatReverse(): void {
     this.value = this.value.split('').reverse().join('');
   }
 
-  formatTitleCase() {
+  formatTitleCase(): void {
     let valueSplitted: string[] = this.value.split(' ');
     for (let i = 0; i < valueSplitted.length; i++) {
       valueSplitted[i] = valueSplitted[i][0].toUpperCase() + valueSplitted[i].slice(1);
@@ -126,7 +126,7 @@ class Message {
     this.value = valueSplitted.join(' ');
   }
 
-  print() {
+  print(): void {
     console.log(this.value);
   }
 }
@@ -156,12 +156,12 @@ class Message {
     this.value = value;
   }
 
-  formatReverse() {
+  formatReverse(): this {
     this.value = this.value.split('').reverse().join('');
     return this; // Setelah melakukan operasi reverse pada value, return object menggunakan keyword this
   }
 
-  formatTitleCase() {
+  formatTitleCase(): this {
     let valueSplitted: string[] = this.value.split(' ');
     for (let i = 0; i < valueSplitted.length; i++) {
       valueSplitted[i] = valueSplitted[i][0].toUpperCase() + valueSplitted[i].slice(1);
@@ -170,7 +170,7 @@ class Message {
     return this; // Setelah melakukan operasi title case pada value, return object menggunakan keyword this
   }
 
-  print() {
+  print(): void {
     console.log(this.value);
   }
 }

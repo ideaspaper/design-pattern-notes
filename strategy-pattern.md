@@ -53,14 +53,14 @@ class Adult extends Human {
 Contoh penggunaan dari kedua class di atas adalah sebagai berikut.
 
 ```typescript
-let adultAcong = new Adult('Acong', 'Qwerty');
+let adultAcong: Adult = new Adult('Acong', 'Qwerty');
 adultAcong.greet(); // Halo nama saya adalah Acong Qwerty.
 adultAcong.sleep(); // Acong Qwerty Zzz...
 adultAcong.eat();   // Acong Qwerty makan menggunakan sendok.
 adultAcong.walk();  // Acong Qwerty berjalan dengan dua kaki.
 ```
 
-Suatu saat, client meminta agar program tidak hanya untuk menangani `Adult` saja namun juga `Baby`. Ada kemungkinan bahwa client akan meminta program kita untuk dapat menangani `Toddler` dan `Elder` kedepannya, namun hal tersebut masih belum diputuskan.
+Suatu saat, client meminta agar program tidak hanya dapat menangani `Adult` saja namun juga `Baby`. Ada kemungkinan bahwa client akan meminta program kita untuk dapat menangani `Toddler` dan `Elder` kedepannya, namun hal tersebut masih belum diputuskan.
 
 Karena kita sudah memiliki class `Human`, maka kita hanya perlu membuat class `Baby` yang merupakan turunan dari `Human`. Namun hal tersebut akan menyebabkan error yaitu:
   - Sebuah baby tidak mungkin bisa memperkenalkan dirinya dengan lancar.
@@ -74,7 +74,7 @@ class Baby extends Human {
   }
 }
 
-let babySitorus = new Baby('Sitorus', 'Asdfg');
+let babySitorus: Baby = new Baby('Sitorus', 'Asdfg');
 babySitorus.greet(); // Halo nama saya adalah Sitorus Asdfg. 😱️
 babySitorus.sleep(); // Sitorus Asdfg zzz...
 babySitorus.eat();   // Sitorus Asdfg makan menggunakan sendok. 😱️
@@ -91,20 +91,20 @@ class Baby extends Human {
     super(firstName, lastName);
   }
 
-  greet() {
+  greet(): void {
     console.log('Nyenyenye...');
   }
 
-  eat() {
+  eat(): void {
     console.log(`${this.firstName} ${this.lastName} menyusu.`)
   }
 
-  walk() {
+  walk(): void {
     console.log(`${this.firstName} ${this.lastName} merangkak.`);
   }
 }
 
-let babySitorus = new Baby('Sitorus', 'Asdfg');
+let babySitorus: Baby = new Baby('Sitorus', 'Asdfg');
 babySitorus.greet(); // Nyenyenye...
 babySitorus.sleep(); // Sitorus Asdfg zzz...
 babySitorus.eat();   // Sitorus Asdfg menyusu.

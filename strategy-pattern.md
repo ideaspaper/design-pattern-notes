@@ -256,9 +256,13 @@ class Teenager extends Human {
 Dengan adanya fungsi setter, maka kita dapat menentukan implementasi `greet` yang akan digunakan pada saat _runtime_.
 
 ```typescript
-let teenagerAcong = new Teenager('Sitorus', 'Asdfg');
+let teenagerAcong: Teenager = new Teenager('Sitorus', 'Asdfg');
 teenagerAcong.setGreet(new ProperGreet(teenagerAcong));
 teenagerAcong.greet.execute();
 ```
+
+## Example
+
+Contoh implementasi strategy pattern dapat di temukan [di sini](./strategy-pattern-example).
 
 [**BACK**](./README.md)

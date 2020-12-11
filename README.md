@@ -7,7 +7,7 @@ Repository ini adalah rangkuman hasil belajar mandiri dari buku "Head First Desi
 - [Hello World! I am speaking TypeScript!](./hello-world-i-am-speaking-typescript.md)
 - [TypeScript for JavaScript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [Class in TypeScript](./class-in-typescript.md)
-- [Interface in TypeScript (Class Types)](./interface-in-typescript-class.md)
+- [Interface in TypeScript (for Class)](./interface-in-typescript-class.md)
 
 ## Design Patterns
 

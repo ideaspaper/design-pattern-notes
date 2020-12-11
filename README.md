@@ -12,5 +12,4 @@ Repository ini adalah rangkuman hasil belajar mandiri dari buku "Head First Desi
 ## Design Patterns
 
 - [Strategy Pattern (Behavioral)](./strategy-pattern.md)
-- [Factory Method (Creational)](./#)
-- [Singleton (Creational)](./#)
+- [Observer Pattern (Behavioral)](./observer-pattern.md)

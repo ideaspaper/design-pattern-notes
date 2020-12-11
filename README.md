@@ -5,12 +5,12 @@ Repository ini adalah rangkuman hasil belajar mandiri dari buku "Head First Desi
 ## Preliminaries
 
 - [Hello World! I am speaking TypeScript!](./hello-world-i-am-speaking-typescript.md)
-- [TypeScript for JavaScript Programmers.](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-- [Class in TypeScript.](./class-in-typescript.md)
-- [Interface in TypeScript](./interface-in-typescript.md)
+- [TypeScript for JavaScript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [Class in TypeScript](./class-in-typescript.md)
+- [Interface in TypeScript (Class Types)](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
 
 ## Design Patterns
 
 - [Strategy Pattern (Behavioral)](./strategy-pattern.md)
-- [Factory Method (Creational)](./factory-method.md)
-- [Singleton (Creational)](./singleton.md)
+- [Factory Method (Creational)](./#)
+- [Singleton (Creational)](./#)

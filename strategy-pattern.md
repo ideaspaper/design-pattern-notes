@@ -263,6 +263,6 @@ teenagerAcong.greet.execute();
 
 ## Example
 
-Contoh implementasi strategy pattern dapat di temukan [di sini](./strategy-pattern-example).
+Contoh implementasi strategy pattern terdapat pada [link ini](./strategy-pattern-example).
 
 [**BACK**](./README.md)

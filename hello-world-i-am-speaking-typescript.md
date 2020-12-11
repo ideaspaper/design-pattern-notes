@@ -70,8 +70,12 @@ Untuk mempersingkat proses konfigurasi, saat ini copy-paste `json` berikut pada 
 ```json
 {
   "compilerOptions": {
+    "outDir": "dist",
     "rootDir": "./src",
-    "outDir": "dist"
+    "lib": [
+      "DOM",
+      "es2017"
+    ]
   },
   "include": [
     "src/**/*"

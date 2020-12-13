@@ -144,6 +144,6 @@ Acong Suherman tidak akan mendapatkan berita tersebut, karena dia tidak berlangg
 
 ## Example
 
-Contoh implementasi observer patter terdapat pada [link ini](./observer-pattern-example).
+Contoh implementasi observer pattern terdapat pada [link ini](./observer-pattern-example).
 
 [**BACK**](./README.md)

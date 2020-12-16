@@ -13,3 +13,4 @@ Repository ini adalah rangkuman hasil belajar mandiri dari buku "Head First Desi
 
 - [Strategy Pattern (Behavioral)](./strategy-pattern.md)
 - [Observer Pattern (Behavioral)](./observer-pattern.md)
+- [Decorator Pattern (Behavioral)](./decorator-pattern.md)

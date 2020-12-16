@@ -78,9 +78,9 @@ class Decorator implements IProduct {
 }
 ```
 
-Class `Decorator` mengimplementasikan `IProduct`. Hal ini dikarenakan, kita akan menambahkan responsibilitas baru dari produk yang sudah ada. Maka dari itu, kita menggunakan blueprint yang sama pula untuk membuat sebuah decorator.
+Class `Decorator` mengimplementasikan `IProduct`. Hal ini dikarenakan, kita akan menambahkan responsibilitas baru pada object `Product` yang sudah ada. Maka dari itu, kita menggunakan blueprint yang sama pula untuk membuat object `Decorator`.
 
-Jika diperhatikan, pada class `Decorator` terdapat sebuah property tambahan yaitu `product`. Property tersebutlah yang akan kita "bungkus" atau berikan dekorasi. Kode program pada method `setName` dan `setPrice`, diawali dengan mendapatkan nilai dari `product`. Nilai tersebut kemudian ditambahkan dengan nilai baru.
+Jika diperhatikan, pada class `Decorator` terdapat sebuah property tambahan yaitu `product`. Property tersebutlah yang akan kita "bungkus" atau berikan dekorasi. Kode program pada method `setName` dan `setPrice`, diawali dengan mendapatkan nilai dari `product`. Nilai tersebutlah yang kemudian ditambahkan dengan nilai baru.
 
 Berikut adalah contoh penggunaan dari class-class yang telah kita buat sebelumnya.
 

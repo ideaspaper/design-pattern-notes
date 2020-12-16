@@ -12,7 +12,7 @@ Target kita adalah membuat sebuah object untuk merepresentasikan lemari tersebut
 
 ## Solution
 
-Decorator pattern merupakan solusi untuk jenis pemasalahan di atas. Decorator pattern digunakan untuk menambahkan sebuah responsibilitas baru dari yang sudah ada sebelumnya. Sebagai contoh, class `Lemari` akan memiliki property harga dengan value 500000. Apabila terdapat permintaan untuk ditambahkan ukiran, kita hanya perlu menambahkan, misal 75000 pada harga awal, yaitu 500000 (note: disini kita menambahkan, bukan mengubah harga awal).
+Decorator pattern merupakan solusi untuk jenis pemasalahan di atas. Decorator pattern digunakan untuk menambahkan sebuah responsibilitas baru dari yang sudah ada sebelumnya. Sebagai contoh, class `Lemari` akan memiliki property `harga` dengan value 500000. Apabila terdapat permintaan untuk ditambahkan ukiran, kita hanya perlu menambahkan, misal 75000 pada harga awal, yaitu 500000 (note: disini kita menambahkan, bukan mengubah harga awal).
 
 Langkah pertama yang dilakukan pada decorator pattern adalah membuat sebuah `interface` yang akan digunakan oleh class `Product` dan `Decorator`.
 

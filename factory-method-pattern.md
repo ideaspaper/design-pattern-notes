@@ -135,8 +135,8 @@ Apabila kita amati [Solution (part 2)](#solution-part-2), alangkah lebih praktis
 
 Agar kode program user menjadi lebih sederhana dan intuitif, kita dapat melakukan langkah-langkah berikut:
 
-1. Membuat class `CompanyCashReport` menjadi abstract.
-1. Menambahkan sebuah abstract method, yaitu `cashReportFactory` yang nantinya harus di-override oleh class turunannya.
+1. Mengubah class `CompanyCashReport` menjadi abstract.
+1. Menambahkan sebuah abstract method, yaitu `cashReportFactory` pada `CompanyCashReport`, yang nantinya harus di-override oleh class turunannya.
 1. Membuat class turunan dari `CompanyCashReport`, yaitu `RNDCompanyCashReport` dan `ShopCompanyCashReport`.
 
 Bentuk dari class `CompanyCashReport` menjadi seperti di bawah.

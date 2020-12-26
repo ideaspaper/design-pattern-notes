@@ -14,8 +14,8 @@ Repository ini adalah rangkuman hasil belajar mandiri dari buku "Head First Desi
 - [Strategy Pattern (Behavioral)](./strategy-pattern.md)
 - [Observer Pattern (Behavioral)](./observer-pattern.md)
 - [Decorator Pattern (Behavioral)](./decorator-pattern.md)
-- [Simple Factory (Behavioral)](./simple-factory.md)*
-- [Factory Method Pattern (Behavioral)](./factory-method-pattern.md)
+- [Simple Factory (Creational)](./simple-factory.md)*
+- [Factory Method Pattern (Creational)](./factory-method-pattern.md)
 
 
 > (*) Tidak dianggap sebagai design pattern

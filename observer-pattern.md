@@ -43,7 +43,7 @@ Selanjutnya kita akan membuat sebuah class `NewsPortal` yang mengimplementasikan
 
 ```typescript
 class NewsPortal implements ISubject, INews {
-  private news: string;
+  private news: string = <string>{};
   private observers: IObserver[] = [];
 
   registerObserver(observer: IObserver): boolean { // Menambahkan observer ke list observers

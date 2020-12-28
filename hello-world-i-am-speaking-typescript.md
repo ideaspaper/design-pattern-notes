@@ -75,7 +75,12 @@ Untuk mempersingkat proses konfigurasi, saat ini copy-paste `json` berikut pada 
     "lib": [
       "DOM",
       "es2017"
-    ]
+    ],
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "strict": true
   },
   "include": [
     "src/**/*"

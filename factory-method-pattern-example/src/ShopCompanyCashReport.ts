@@ -6,7 +6,7 @@ import { ShopSpreadsheetCashReport } from './ShopSpreadsheetCashReport';
 
 export class ShopCompanyCashReport extends CompanyCashReport {
   cashReportFactory(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new ShopDocCashReport();
     } else if (reportType === 'pdf') {

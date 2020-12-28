@@ -6,7 +6,7 @@ import { RNDSpreadsheetCashReport } from './RNDSpreadsheetCashReport';
 
 export class RNDCompanyCashReport extends CompanyCashReport {
   cashReportFactory(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new RNDDocCashReport();
     } else if (reportType === 'pdf') {

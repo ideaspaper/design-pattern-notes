@@ -77,7 +77,7 @@ interface ISimpleCashReportFactory {
 
 class RNDSimpleCashReportFactory implements ISimpleCashReportFactory {
   createCashReport(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new RNDDocCashReport();
     } else if (reportType === 'pdf') {
@@ -91,7 +91,7 @@ class RNDSimpleCashReportFactory implements ISimpleCashReportFactory {
 
 class ShopSimpleCashReportFactory implements ISimpleCashReportFactory {
   createCashReport(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new ShopDocCashReport();
     } else if (reportType === 'pdf') {
@@ -163,7 +163,7 @@ Karena `CompanyCashReport` merupakan abstract class, maka kita harus membuat cla
 ```typescript
 class RNDCompanyCashReport extends CompanyCashReport {
   cashReportFactory(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new RNDDocCashReport();
     } else if (reportType === 'pdf') {
@@ -177,7 +177,7 @@ class RNDCompanyCashReport extends CompanyCashReport {
 
 class ShopCompanyCashReport extends CompanyCashReport {
   cashReportFactory(reportType: string): CashReport {
-    let cashReport: CashReport;
+    let cashReport: CashReport = <CashReport>{};
     if (reportType === 'doc') {
       cashReport = new ShopDocCashReport();
     } else if (reportType === 'pdf') {
@@ -199,6 +199,6 @@ rndCashReport.monthlyCashReport('doc');
 
 ## Example
 
-Contoh implementasi factory pattern terdapat pada [link ini](./factory-pattern-example).
+Contoh implementasi factory pattern terdapat pada [link ini](./factory-method-pattern-example).
 
 [**BACK**](./README.md)

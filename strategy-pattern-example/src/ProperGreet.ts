@@ -4,7 +4,7 @@ import { IGreet } from './IGreet';
 export class ProperGreet implements IGreet {
   private owner: Human;
   
-  constructor(owner) {
+  constructor(owner: Human) {
     this.owner = owner;
   }
 

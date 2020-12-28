@@ -127,7 +127,7 @@ interface IGreet {
 class NoGreet implements IGreet {
   private owner: Human;
   
-  constructor(owner) {
+  constructor(owner: Human) {
     this.owner = owner;
   }
 
@@ -139,7 +139,7 @@ class NoGreet implements IGreet {
 class ProperGreet implements IGreet {
   private owner: Human;
   
-  constructor(owner) {
+  constructor(owner: Human) {
     this.owner = owner;
   }
 
@@ -199,7 +199,7 @@ Dengan cara di atas, kita dapat menentukan implementasi (_strategy_) `IGreet` ya
 class SlowGreet implements IGreet {
   private owner: Human;
   
-  constructor(owner) {
+  constructor(owner: Human) {
     this.owner = owner;
   }
 
@@ -241,7 +241,7 @@ Contoh dari implementasi fungsi setter pada class `Teenager` adalah seperti di b
 
 ```typescript
 class Teenager extends Human {
-  greet: IGreet;
+  greet: IGreet = <IGreet>{};
 
   constructor(firstName: string, lastName: string) {
     super(firstName, lastName);

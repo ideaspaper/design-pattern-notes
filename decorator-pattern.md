@@ -29,8 +29,8 @@ Bentuk dari class `Product` dan `Decorator` adalah seperti di bawah.
 
 ```typescript
 class Product implements IProduct {
-  private name: string;
-  private price: number;
+  private name: string = <string>{};
+  private price: number = <number>{};
 
   setName(name: string): void {
     this.name = name;
@@ -50,9 +50,9 @@ class Product implements IProduct {
 }
 
 class Decorator implements IProduct {
-  protected name: string;
-  protected price: number;
-  protected product: IProduct;
+  protected name: string = <string>{};
+  protected price: number = <number>{};
+  protected product: IProduct = <IProduct>{};
 
   constructor(product: IProduct) {
     this.product = product;

@@ -1,8 +1,8 @@
 import { IProduct } from './IProduct';
 
 export class Product implements IProduct {
-  private name: string;
-  private price: number;
+  private name: string = <string>{};
+  private price: number = <number>{};
 
   setName(name: string): void {
     this.name = name;

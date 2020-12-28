@@ -1,9 +1,9 @@
 import { IProduct } from './IProduct'
 
 export class Decorator implements IProduct {
-  protected name: string;
-  protected price: number;
-  protected product: IProduct;
+  protected name: string = <string>{};
+  protected price: number = <number>{};
+  protected product: IProduct = <IProduct>{};
 
   constructor(product: IProduct) {
     this.product = product;

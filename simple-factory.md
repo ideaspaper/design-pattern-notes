@@ -78,7 +78,7 @@ Selanjutnya kita membuat sebuah class `CompanyCashReport`. Class tersebut memili
 ```typescript
 class CompanyCashReport {
   monthlyCashReport(reportType: string): void {
-    let cashReport: ICashReport;
+    let cashReport: ICashReport = <ICashReport>{};
 
     if (reportType === 'doc') {
       cashReport = new DocCashReport();
@@ -109,7 +109,7 @@ Jika kita perhatikan kode program di atas, hal yang berubah-ubah terdapat pada b
 ```typescript
 class SimpleCashReportFactory {
   createCashReport(reportType: string): ICashReport {
-    let cashReport: ICashReport;
+    let cashReport: ICashReport = <ICashReport>{};
     if (reportType === 'doc') {
       cashReport = new DocCashReport();
     } else if (reportType === 'pdf') {

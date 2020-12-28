@@ -5,7 +5,7 @@ import { SpreadsheetCashReport } from './SpreadsheetCashReport';
 
 export class SimpleCashReportFactory {
   createCashReport(reportType: string): ICashReport {
-    let cashReport: ICashReport;
+    let cashReport: ICashReport = <ICashReport>{};
     if (reportType === 'doc') {
       cashReport = new DocCashReport();
     } else if (reportType === 'pdf') {

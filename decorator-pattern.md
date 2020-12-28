@@ -52,7 +52,7 @@ class Product implements IProduct {
 class Decorator implements IProduct {
   protected name: string = <string>{};
   protected price: number = <number>{};
-  protected product: IProduct = <IProduct>{};
+  protected product: IProduct;
 
   constructor(product: IProduct) {
     this.product = product;

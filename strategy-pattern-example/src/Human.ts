@@ -7,15 +7,15 @@ export class Human {
     this.lastName = lastName;
   }
 
-  sleep() {
+  sleep(): void {
     console.log(`${this.firstName} ${this.lastName} zzz...`);
   }
 
-  getFirstName() {
+  getFirstName(): string {
     return this.firstName;
   }
 
-  getLastName() {
+  getLastName(): string {
     return this.lastName;
   }
 }

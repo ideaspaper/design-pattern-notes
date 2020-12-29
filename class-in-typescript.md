@@ -12,8 +12,8 @@ Sebuah class dapat memiliki property. Sebagai contoh, class Person memiliki prop
 
 ```typescript
 class Person {
-  firstName: string;
-  lastName: string;
+  firstName?: string;
+  lastName?: string;
 }
 
 let johnDoe: Person = new Person(); // Membuat object Person
@@ -29,8 +29,8 @@ Selain property, class juga dapat memiliki method (function). Apabila kita menye
 
 ```typescript
 class Person {
-  firstName: string;
-  lastName: string;
+  firstName?: string;
+  lastName?: string;
 
   greet(): void {
     console.log(`Hello my name is ${this.firstName} ${this.lastName}. You can call me ${this.firstName}.`);
@@ -68,8 +68,8 @@ class Person {
 }
 
 let johnDoe: Person = new Person('John', 'Doe'); // Membuat object Person menggunakan constructor
-                                         // 'John' sebagai value argumen fn
-                                         // 'Doe' sebagai value argumen ln
+                                                 // 'John' sebagai value argumen fn
+                                                 // 'Doe' sebagai value argumen ln
 
 johnDoe.greet(); // Hello my name is John Doe. You can call me Doe.
 ```
